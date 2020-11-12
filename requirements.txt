@@ -1,0 +1,15 @@
+jupyterlab
+torch>=1.6
+# make sure your torchvision version is correct for your torch version.
+torchvision>=0.7.0
+ipywidgets
+numpy~=1.19.2
+PyYAML~=5.3.1
+tqdm~=4.51.0
+scipy~=1.5.2
+Pillow~=8.0.0
+imageio~=2.9.0
+scikit-image~=0.17.2
+matplotlib~=3.3.2
+setuptools~=50.3.0
+opencv_python
