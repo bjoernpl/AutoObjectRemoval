@@ -1,0 +1,9 @@
+[submodule "FGVC"]
+	path = FGVC
+	url = https://github.com/vt-vl-lab/FGVC.git
+[submodule "DFVI"]
+	path = DFVI
+	url = https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting.git
+[submodule "RAFT"]
+	path = RAFT
+	url = https://github.com/princeton-vl/RAFT.git
