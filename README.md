@@ -13,9 +13,10 @@ meticulously masked, now Detectron2 does most of this work. If necessary, masks 
 the object removal step.
 
 ## Installation
-<u>This is a rather complex setup process. Make sure to read thoroughly.</u>
+This process takes a few steps for installing each of the recommended libraries. It uses two conda environments
+because ``pytorch 0.4.0`` and ``pytorch 1.6.0``are both required.
 #### Step 1. Prerequisites
-- Make sure your have ``conda`` installed. Other package managers can be used but will not be detailed here.
+- ``conda``
 - ``python 3.6`` on `linux` is recommended.
 - ``cuda 9.0`` is required for DeepFill compilation
 - ``gcc & g++ >= 5`` are required for Detectron compilation
@@ -30,7 +31,7 @@ git clone --recursive git@github.com:bjoernpl/AutoObjectRemoval.git
 ```
 
 #### Step 3. Install DFVI
-Make sure you install everything here in a conda env named ``FGVC``.
+Install everything here in a conda env named ``FGVC``.
 ```
 conda create -n FGVC python=3.6
 conda activate FGVC 
@@ -40,9 +41,9 @@ bash install_scripts.sh
 conda deactivate
 ```
 For more info on the installation and issues see 
-[their repo](https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting#install--requirements).
+[the DFVI repo](https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting#install--requirements).
 #### Step 4. Install raft
-Make sure you install everything here in a conda env named ``raft``.
+Install everything here in a conda env named ``raft``.
 ```
 cd RAFT
 conda create --name raft python=3.6
@@ -66,10 +67,9 @@ First install requirements with:
 pip install -r requirements.txt
 ```
 Next install Detectron2 by following 
-[their install guide](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md) or calling:
+[their install guide](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md) or running:
 ```
 python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
-# (add --user if you don't have permission)
 ```
 
 #### Done!
@@ -80,8 +80,9 @@ Right now this can only be run by using the demo notebook but once I get the per
 I'll make a script to run it directly from the command line or even as a library.
 
 ## References
-Basically none of the work in this repository is actually mine, I only combined 2 very solid projects to create
-a new one. Thanks very much to the creators of these projects and all contributors.
+Thanks to the creators of these projects and all contributors.
+
+
 ##### vt-vl-lab/FGVC
 ```
 @inproceedings{Gao-ECCV-FGVC,
