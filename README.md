@@ -1,5 +1,4 @@
-![AutoObjectRemoval](https://socialify.git.ci/bjoernpl/AutoObjectRemoval/image?description=1&font=Source%20Code%20Pro&language=1&owner=1&pattern=Brick%20Wall&theme=Dark)
-
+![AutoObjectRemoval](https://socialify.git.ci/bjoernpl/AutoObjectRemoval/image?description=1&font=Inter&language=1&owner=1&pattern=Brick%20Wall&theme=Dark)
 # AutoObjectRemoval
 
 This system combines advances in instance segmentation ([Detectron2](https://github.com/facebookresearch/detectron2))
