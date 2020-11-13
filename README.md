@@ -35,9 +35,8 @@ Install everything here in a conda env named ``FGVC``.
 ```
 conda create -n FGVC python=3.6
 conda activate FGVC 
-cd DFVI
-pip install -r requirements.txt
-bash install_scripts.sh
+pip install -r ./DFVI/requirements.txt
+bash ./DFVI/install_scripts.sh
 conda deactivate
 ```
 For more info on the installation and issues see 
@@ -45,7 +44,6 @@ For more info on the installation and issues see
 #### Step 4. Install raft
 Install everything here in a conda env named ``raft``.
 ```
-cd RAFT
 conda create --name raft python=3.6
 conda activate raft
 conda install pytorch=1.6.0 torchvision=0.7.0 cudatoolkit=10.1 -c pytorch
@@ -53,8 +51,7 @@ conda install matplotlib
 conda install tensorboard
 conda install scipy
 conda install opencv
-./download_models.sh
-cd ..
+./RAFT/download_models.sh
 ```
 For more info on this see the [RAFT repo](https://github.com/princeton-vl/RAFT#requirements).
 
@@ -64,7 +61,7 @@ and activated env ``raft`` but this can also be a separate env.
 
 First install requirements with:
 ```
-pip install -r requirements.txt
+pip install -r ./requirements.txt
 ```
 Next install Detectron2 by following 
 [their install guide](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md) or running:
@@ -73,7 +70,7 @@ python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 ```
 
 #### Done!
-You can now run the demo notebook by running ``jupyter lab`` or `jupyter notebook`.
+You can now run the demo notebook by running ``jupyter lab`` or `jupyter notebook` or using the IDE of your choice.
 
 ## Future work
 Right now this can only be run by using the demo notebook but once I get the performance where I want it to be,
