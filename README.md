@@ -12,6 +12,13 @@ The benefit of this setup is to take the manual work out of the masking process.
 meticulously masked, now Detectron2 does most of this work. If necessary, masks can always be manually edited before 
 the object removal step.
 
+## Example
+Note that this is still WIP. Most likely in some frames player is still visible because the mask does not cover him entirely. I've added some
+padding to the mask to get better coverage but results seemed only slightly better.        
+<img src="https://github.com/bjoernpl/gifs/raw/main/original.gif" alt="Databay showcase gif" title="Databay showcase gif" width="300"/>
+<img src="https://github.com/bjoernpl/gifs/raw/main/masks.gif" alt="Databay showcase gif" title="Databay showcase gif" width="300"/>
+<img src="https://github.com/bjoernpl/gifs/raw/main/removed.gif" alt="Databay showcase gif" title="Databay showcase gif" width="300"/>
+
 ## Installation
 This process takes a few steps for installing each of the recommended libraries. It uses two conda environments
 because ``pytorch 0.4.0`` and ``pytorch 1.6.0``are both required.
